@@ -1,19 +1,23 @@
 {
-  "name": "nightwatch-demo",
+  "name": "nightwatch-cucumber-poc",
   "version": "1.0.0",
-  "description": "testing out nightwatch",
-  "main": "index.js",
+  "description": "testing out nightwatch with cucumber",
   "scripts": {
-    "test": "node_modules/.bin/nightwatch"
+    "smoke": "node_modules/.bin/nightwatch --tag smoketest",
+    "test": "node_modules/.bin/nightwatch",
+    "parallel": "node_modules/.bin/nightwatch -e default,chrome",
+    "report": "node util/create-html-report.js"
   },
-  "author": "Modus Create",
-  "license": "ISC",
+  "author": "Lisa Hickey",
   "devDependencies": {
-    "chromedriver": "^2.38.2",
-    "cucumber": "^4.0.0",
-    "cucumber-pretty": "^1.4.3",
-    "nightwatch": "^0.9.20",
-    "nightwatch-cucumber": "^9.1.2",
-    "selenium-server": "^3.11.0"
+    "chromedriver": "2.38.2",
+    "cucumber": "4.0.0",
+    "cucumber-pretty": "1.4.3",
+    "nightwatch": "0.9.20",
+    "nightwatch-cucumber": "9.1.2",
+    "selenium-server": "3.11.0"
+  },
+  "dependencies": {
+    "cucumber-html-reporter": "4.0.4",
   }
 }

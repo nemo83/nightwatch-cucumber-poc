@@ -5,3 +5,5 @@
 *.DS_Store
 tests/nightwatch/selenium-debug.log
 /selenium-debug.log
+.idea/*
+*.png
