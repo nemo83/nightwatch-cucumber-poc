@@ -18,6 +18,6 @@
     "selenium-server": "3.11.0"
   },
   "dependencies": {
-    "cucumber-html-reporter": "4.0.4",
+    "cucumber-html-reporter": "4.0.4"
   }
 }
