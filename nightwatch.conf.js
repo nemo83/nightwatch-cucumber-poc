@@ -1,7 +1,6 @@
 const seleniumServer = require('selenium-server');
 const chromedriver = require('chromedriver');
 const SCREENSHOT_PATH = ('reports/screenshots/');
-var reporter = require('cucumber-html-reporter');
 
 require('nightwatch-cucumber')({
     cucumberArgs: [
